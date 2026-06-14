@@ -2,7 +2,7 @@
 
 resize = { mode="smart" }
 floating-hack = true
-# early-exit = true
+early-exit = true
 # early-exit-save-as = true
 corner-roundness = 12
 
@@ -75,7 +75,7 @@ text-move-length = 50.0
 # experimental feature (0.20.1): Scale factor on the input image when it was taken (e.g. DPI scale on the monitor it was recorded from).
 # This may be more useful to set via the command line.
 # Note, this is ignored with explicit resize.
-input-scale = 2.0
+# input-scale = 2.0
 
 # experimental feature (NEXTRELEASE): set window title
 # experimental feature (NEXTRELEASE): set app_id, note this has to match D-Bus well-known name format, otherwise GTK does not accept it.

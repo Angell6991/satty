@@ -3,7 +3,7 @@
 resize = { mode="smart" }
 floating-hack = true
 early-exit = true
-# early-exit-save-as = true
+# early-exit-save = true
 corner-roundness = 12
 
 # Select the tool on startup [possible values: pointer, crop, line, arrow, rectangle, text, marker, blur, brush]
@@ -16,7 +16,7 @@ copy-command = "wl-copy"
 annotation-size-factor = 1
 
 # starting with 0.20.0, can contain leading tilde (~) for home directory
-output-filename = "/tmp/test-%Y-%m-%d_%H:%M:%S.png"
+# output-filename = "/tmp/test-%Y-%m-%d_%H:%M:%S.png"
 
 # After copying the screenshot, save it to a file as well
 save-after-copy = false
@@ -42,15 +42,15 @@ actions-on-right-click = []
 
 # Actions to trigger on Enter key (order is important)
 # [possible values: save-to-clipboard, save-to-file, save-to-file-as, copy-filepath-to-clipboard, exit]
-actions-on-enter = ["save-to-clipboard"]
+actions-on-enter = ["save-to-file-as"]
 
 # Actions to trigger on Escape key (order is important)
 # [possible values: save-to-clipboard, save-to-file, save-to-file-as, copy-filepath-to-clipboard, exit]
-actions-on-escape = ["exit"]
+actions-on-escape = ["save-to-file", "exit"]
 
 # Action to perform when the Enter key is pressed [possible values: save-to-clipboard, save-to-file]
 # Deprecated: use actions-on-enter instead
-action-on-enter = "save-to-clipboard"
+# action-on-enter = "save-to-clipboard"
 
 # Right click to copy
 # Deprecated: use actions-on-right-click instead
